@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "235947238833",
+    "firebase_url": "https://autozon-dd3fa.firebaseio.com",
+    "project_id": "autozon-dd3fa",
+    "storage_bucket": "autozon-dd3fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235947238833:android:8f97f924e587a8a0",
+        "android_client_info": {
+          "package_name": "redeem.com.autozon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235947238833-ksvpk1i6nas76lv7q9ln8e8f290pi67v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "redeem.com.autozon",
+            "certificate_hash": "b20d44654a4cc8a19bfa1fe57c828b4e433a5028"
+          }
+        },
+        {
+          "client_id": "235947238833-8s3juulhcovihrkj537b8p8ei71b920c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsN8zrH4kGNuJe8nNYN5ZOapLhbW00_J8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235947238833-8s3juulhcovihrkj537b8p8ei71b920c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

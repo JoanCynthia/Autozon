@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/water_mark"
+    tools:context=".Address">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <EditText
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address_house_no_building_street"
+                android:id="@+id/addres"
+                android:maxLength="95"
+                android:textSize="15sp"
+                android:layout_margin="10dp"/>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/locality_town"
+                android:inputType="text"
+                android:id="@+id/town"
+                android:maxLength="35"
+                android:textSize="15sp"
+                android:layout_margin="10dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/city_district"
+                android:inputType="text"
+                android:maxLines="1"
+                android:id="@+id/city"
+                android:textSize="15sp"
+                android:maxLength="35"
+                android:layout_margin="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/pinCode"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:hint="@string/pin_code"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:maxLength="10"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/state"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:hint="@string/state"
+                    android:textSize="15sp"
+                    android:maxLength="35"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cancel"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button2"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:text="@string/cancellll"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/save"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button2"
+                    android:textColor="#FFF"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/save"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

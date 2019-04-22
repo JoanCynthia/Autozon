@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water_mark"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".ServiceReport">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_pic"
+            android:src="@drawable/user"
+            android:layout_gravity="left"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:civ_border_width="0.5dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="2dp"
+            app:civ_border_color="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hi"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/ticket"
+        android:background="@drawable/address"
+        android:textSize="20sp"
+        android:hint="@string/enter_your_ticket_id_here"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#007aab"/>-->
+    <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="10"-->
+        <!--android:id="@+id/group"-->
+        <!--&gt;-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Product Repair"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:id="@+id/radio1"/>-->
+
+        <!--<RadioButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Product Installation"-->
+            <!--android:textSize="15sp"-->
+            <!--android:id="@+id/radio2"-->
+            <!--android:layout_marginLeft="30sp"/>-->
+
+
+    <!--</RadioGroup>-->
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:id="@+id/status">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_completed"
+            android:textSize="15sp"
+            android:id="@+id/radio3"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_pending"
+            android:textSize="15sp"
+            android:id="@+id/radio4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:text="Rate Now"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginStart="40dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="13"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/group2">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/excellent"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Good"
+            android:id="@+id/good"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Average"
+            android:id="@+id/average"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Poor"
+            android:id="@+id/poor"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:text="Please sign here"
+        android:layout_marginLeft="40dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginStart="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/mysignature"
+        android:background="@drawable/address">
+
+
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/remarks"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:textAllCaps="false"
+            android:background="@drawable/button1"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:text="@string/cancellll"
+            android:textSize="20sp"/>
+
+
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:textAllCaps="false"
+            android:background="@drawable/button1"
+            android:textColor="#FFF"
+            android:layout_marginLeft="20dp"
+            android:text="@string/submittttt"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+</LinearLayout>
